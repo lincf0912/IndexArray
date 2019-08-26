@@ -35,6 +35,8 @@ extern NSString *const kIndexArrayObjectKey;
 @property (nonatomic, readonly) id lastObject;
 @property (nonatomic, weak) id<IndexArrayDelegate> delegate;
 
+@property (nonatomic, assign, class) BOOL debugLog;
+
 /**
  设置序列key
 

@@ -64,6 +64,7 @@ NSString *const kIndexArrayObjectKey = @"IndexArrayObjectKey";
 @end
 
 static NSDictionary *IndexArrayObjectClass;
+static BOOL IndexArrayDebugLog = NO;
 
 @interface IndexArray ()
 
@@ -74,6 +75,16 @@ static NSDictionary *IndexArrayObjectClass;
 @end
 
 @implementation IndexArray
+
++ (void)setDebugLog:(BOOL)debugLog
+{
+    IndexArrayDebugLog = debugLog;
+}
+
++ (BOOL)debugLog
+{
+    return IndexArrayDebugLog;
+}
 
 /** 设置序列key */
 + (void)setIndexKey:(NSArray <NSDictionary <NSString *, NSString *>*>*)objects
@@ -120,7 +131,7 @@ static NSDictionary *IndexArrayObjectClass;
 {
     NSString *key = [self indexSubKey:anObject superClass:nil];
     
-    if (key.length == 0) {
+    if (IndexArrayDebugLog && key.length == 0) {
         NSLog(@"Object is %@, no match indexKey.", [anObject class]);
     }
     return key;
