@@ -11,6 +11,7 @@
 ## 调用代码
 
 ### 初始化序列
+
 * + (void)setIndexKey:(NSArray <NSDictionary <NSString *, NSString *>*>*)objects;
 
 * IndexArray *indexArray = [IndexArray new];
