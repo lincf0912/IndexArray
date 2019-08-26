@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'IndexArray'
-s.version      = '1.0.0'
+s.version      = '1.0.1'
 s.summary      = 'The combination of dictionary and array.'
 s.homepage     = 'https://github.com/lincf0912/IndexArray'
 s.license      = 'MIT'
