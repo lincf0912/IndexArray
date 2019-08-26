@@ -12,7 +12,7 @@
 
 ### 初始化序列
 
-* + (void)setIndexKey:(NSArray <NSDictionary <NSString *, NSString *>*>*)objects;
+* \+ (void)setIndexKey:(NSArray <NSDictionary <NSString *, NSString *>*>*)objects;
 
 * IndexArray *indexArray = [IndexArray new];
 * [indexArray addObject:obj];
